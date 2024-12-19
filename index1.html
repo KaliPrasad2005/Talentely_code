@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Booking System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Train Booking System</h1>
+        <nav>
+            <ul>
+                <li><a href="#search">Search Train</a></li>
+                <li><a href="#book">Book Tickets</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="search">
+            <h2>Search Trains</h2>
+            <form id="searchForm">
+                <label for="source">Source:</label>
+                <input type="text" id="source" name="source" placeholder="Enter source station" required>
+                
+                <label for="destination">Destination:</label>
+                <input type="text" id="destination" name="destination" placeholder="Enter destination station" required>
+                
+                <label for="date">Travel Date:</label>
+                <input type="date" id="date" name="date" required>
+                
+                <button type="submit">Search Trains</button>
+            </form>
+            <div id="trainResults"></div>
+        </section>
+
+        <section id="book">
+            <h2>Book Tickets</h2>
+            <div id="bookingDetails"></div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: support@trainbookingsystem.com</p>
+            <p>Phone: +123 456 7890</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Train Booking System. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
