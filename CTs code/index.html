@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="name">John Doe</h1>
+        <p id="title">Web Developer | Designer | Coder</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Enthusiastic web developer with a passion for creating user-friendly and visually appealing websites.</p>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>React.js, Node.js</li>
+                <li>UI/UX Design</li>
+            </ul>
+        </section>
+        <section id="experience">
+            <h2>Experience</h2>
+            <div>
+                <h3>Frontend Developer</h3>
+                <p>ABC Company | 2020 - Present</p>
+                <ul>
+                    <li>Developed responsive web applications.</li>
+                    <li>Collaborated with the design team for UI/UX improvements.</li>
+                </ul>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: johndoe@example.com</p>
+            <p>Phone: +123 456 7890</p>
+        </section>
+        <section id="review">
+            <h2>Leave a Review</h2>
+            <form id="reviewForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Your Review:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+            <p id="thankYouMessage" style="display: none;">Thank you for your review!</p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 John Doe. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
